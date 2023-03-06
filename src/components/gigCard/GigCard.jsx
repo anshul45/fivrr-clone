@@ -1,9 +1,9 @@
 import React from "react";
-import "GigCard.scss";
+import "./GigCard.scss";
 import { Link } from "react-router-dom";
 const GigCard = ({ item }) => {
   return (
-    <Link to="/gig/123">
+    <Link to="/gig/123" className="link">
       <div className="gigCard">
         <img src={item.img} alt="" />
         <div className="info">
@@ -20,7 +20,7 @@ const GigCard = ({ item }) => {
         <hr />
         <div className="details">
           <img src="./img/heart.png" alt="" />
-          <div className="div">
+          <div className="price">
             <span>STARTING AT</span>
             <h2>${item.price}</h2>
           </div>

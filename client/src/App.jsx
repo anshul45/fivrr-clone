@@ -8,6 +8,7 @@ import Orders from "./pages/orders/Orders";
 import Message from "./pages/message/Message";
 import Messages from "./pages/messages/Messages";
 import MyGigs from "./pages/myGigs/MyGigs";
+import Login from "./pages/login/Login";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.scss";
 function App() {
@@ -26,6 +27,10 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
+        {
+          path: "/login",
+          element: <Login />,
+        },
         {
           path: "/",
           element: <Home />,

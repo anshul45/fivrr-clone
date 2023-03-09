@@ -11,6 +11,7 @@ import MyGigs from "./pages/myGigs/MyGigs";
 import Login from "./pages/login/Login";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.scss";
+import Register from "./pages/register/Register";
 function App() {
   const Layout = () => {
     return (
@@ -30,6 +31,10 @@ function App() {
         {
           path: "/login",
           element: <Login />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
         },
         {
           path: "/",

@@ -1,5 +1,5 @@
-import createError from "../utils/createError";
-import Order from "../models/order.model,js"
+import createError from "../utils/createError.js";
+import Order from "../models/order.model.js"
 import Gig from "../models/gig.model.js"
 
 
@@ -23,3 +23,5 @@ export const createOrder = async(req, res,next) => {
 next(err);
     }
 };
+
+export const getOrders = async (req,res,next)=>{}

@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./Message.scss";
 const Message = () => {
+  
+
+
+
+ 
   return (
     <div className="message">
       <div className="container">

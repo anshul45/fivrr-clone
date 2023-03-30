@@ -13,6 +13,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.scss";
 import Register from "./pages/register/Register";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Success from "./pages/success/Success";
+import Pay from "./pages/pay/Pay";
+
 function App() {
   const queryClient = new QueryClient();
   const Layout = () => {
@@ -71,6 +74,14 @@ function App() {
         {
           path: "/message/:id",
           element: <Message />,
+        },
+        {
+          path: "/pay/:id",
+          element: <Pay/>,
+        },
+        {
+          path: "/success",
+          element: <Success />,
         },
       ],
     },
